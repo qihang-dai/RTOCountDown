@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 2rem;
+            font-size: 2.5em;
+        }
+
+        .countdown-container {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transform: scale(2);
+            margin: 50px;
+        }
+
+        .countdown-timer {
+            display: block;
+            transform-origin: center;
+        }
+
+        .header-image {
+            max-width: 600px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .link-boxes {
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .link-box {
+            padding: 20px 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .link-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.ytimg.com/vi/MvSynW2ammw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC1Mhe0S4_YDriTPuvepNVnzycKfg" 
+         alt="Amazon RTO" 
+         class="header-image">
+    <h1>Time Until Amazon Enforce 5 days RTO</h1>
+    <div class="countdown-container">
+        <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+        <a href="https://logwork.com/countdown-timer" 
+           class="countdown-timer" 
+           data-timezone="America/Los_Angeles" 
+           data-date="2025-01-02 00:00">Countdown Timer</a>
+    </div>
+    <div class="link-boxes">
+        <a href="https://leetcode.com/" class="link-box" target="_blank">Go LeetCode</a>
+        <a href="https://github.com/mukul96/System-Design-AlexXu/blob/205d6887ebdc148870b586a15ce9224370ca2881/System%20Design%20Interview%20An%20Insider%E2%80%99s%20Guide%20by%20Alex%20Xu%20(z-lib.org).pdf" class="link-box" target="_blank">System Design</a>
+    </div>
+</body>
+</html> 
